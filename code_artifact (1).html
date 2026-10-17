@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الحج عبدالغني | لتجارة وتوريد مواد البناء (رمل - زلط - حديد)</title>
+    
+    <!-- Google Fonts: Cairo -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        cairo: ['Cairo', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            dark: '#0f172a',
+                            card: '#1e293b',
+                            gold: '#f59e0b',
+                            goldHover: '#d97706',
+                            goldLight: '#fcd34d',
+                            accent: '#10b981'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        body {
+            font-family: 'Cairo', sans-serif;
+            background-color: #0f172a;
+            color: #f8fafc;
+            overflow-x: hidden;
+        }
+
+        /* Glassmorphism Effect */
+        .glass-card {
+            background: rgba(30, 41, 59, 0.7);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid rgba(245, 158, 11, 0.15);
+        }
+
+        .glass-card-hover:hover {
+            border-color: rgba(245, 158, 11, 0.5);
+            box-shadow: 0 10px 30px -10px rgba(245, 158, 11, 0.25);
+        }
+
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #0f172a;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #334155;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #f59e0b;
+        }
+
+        /* Golden Gradient Text */
+        .gold-gradient-text {
+            background: linear-gradient(135deg, #FFF 0%, #FCD34D 50%, #F59E0B 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .gold-border-gradient {
+            border-image: linear-gradient(to bottom left, #fcd34d, #f59e0b, #78350f) 1;
+        }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col justify-between selection:bg-amber-500 selection:text-slate-900">
+
+    <!-- Top Announcement Bar -->
+    <div class="bg-gradient-to-r from-amber-600 via-amber-500 to-yellow-600 text-slate-950 font-bold py-2 px-4 text-center text-xs sm:text-sm flex items-center justify-center gap-2 shadow-md">
+        <span class="animate-pulse flex h-2 w-2 rounded-full bg-slate-950"></span>
+        <span>تغطية شحن وتوريد يومية بأسرع وقت وأفضل الأسعار لجميع المناطق</span>
+    </div>
+
+    <!-- Main Navigation Header -->
+    <header class="sticky top-0 z-50 glass-card border-b border-slate-800 bg-slate-900/80 backdrop-blur-md">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <!-- Brand Logo -->
+            <a href="#" class="flex items-center gap-3 group">
+                <div class="w-12 h-12 rounded-2xl bg-gradient-to-tr from-amber-600 to-yellow-400 flex items-center justify-center text-slate-950 font-black text-2xl shadow-lg shadow-amber-500/20 group-hover:scale-105 transition-transform duration-300">
+                    ع
+                </div>
+                <div>
+                    <h1 class="text-xl sm:text-2xl font-black tracking-wide gold-gradient-text">الحج عبدالغني</h1>
+                    <p class="text-xs text-amber-400 font-semibold tracking-wider">لتجارة وتوريد مواد البناء</p>
+                </div>
+            </a>
+
+            <!-- Quick Contact Badge & Nav Link -->
+            <div class="flex items-center gap-3">
+                <a href="#calculator" class="hidden md:flex items-center gap-2 text-sm font-semibold text-slate-300 hover:text-amber-400 transition-colors px-3 py-2">
+                    <i class="fa-solid fa-calculator text-amber-400"></i> حاسبة التكلفة
+                </a>
+                <a href="tel:01034355314" class="hidden sm:flex items-center gap-2 bg-slate-800 hover:bg-slate-700 text-amber-400 border border-amber-500/30 px-4 py-2 rounded-xl text-sm font-bold transition-all duration-300">
+                    <i class="fa-solid fa-phone-volume text-amber-400 animate-bounce"></i>
+                    <span>01034355314</span>
+                </a>
+                <a href="#orderSection" class="bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-600 hover:to-amber-700 text-slate-950 font-extrabold px-4 py-2.5 rounded-xl text-sm shadow-lg shadow-amber-500/20 transition-all duration-300 transform active:scale-95">
+                    اطلب الآن
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative pt-12 pb-20 overflow-hidden">
+        <!-- Background Glow Deco -->
+        <div class="absolute top-1/4 right-1/2 translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-amber-500/10 rounded-full blur-3xl pointer-events-none"></div>
+        <div class="absolute top-1/3 left-10 w-72 h-72 bg-emerald-500/5 rounded-full blur-3xl pointer-events-none"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="text-center max-w-3xl mx-auto space-y-6">
+                <!-- Premium Badge -->
+                <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-amber-500/10 border border-amber-500/30 text-amber-400 text-xs sm:text-sm font-bold">
+                    <i class="fa-solid fa-crown text-amber-400"></i>
+                    <span>مورد معتمد | رمل - زلط - حديد - مواد بناء</span>
+                </div>
+
+                <!-- Main Title -->
+                <h1 class="text-4xl sm:text-6xl font-black leading-tight tracking-tight text-white">
+                    أعلى جودة لمواد البناء <br>
+                    <span class="gold-gradient-text">بتوريد سريع وموازين دقيقة</span>
+                </h1>
+
+                <!-- Subtitle -->
+                <p class="text-slate-300 text-base sm:text-lg font-medium leading-relaxed">
+                    منظومة توريد متكاملة تشمل أجود أنواع الرمل، الزلط، والحديد التسليح. نضمن لك السرعة في التوصيل، الالتزام التام بالمواعيد، وأفضل الأسعار التنافسية.
+                </p>
+
+                <!-- Stat Badges Grid -->
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-4 pt-6">
+                    <div class="glass-card p-4 rounded-2xl border border-slate-700 text-center">
+                        <i class="fa-solid fa-shield-halved text-2xl text-amber-400 mb-2"></i>
+                        <h4 class="text-white font-bold text-sm">جودة مضمونة 100%</h4>
+                        <p class="text-xs text-slate-400">خامات ممتازة بدون شوائب</p>
+                    </div>
+                    <div class="glass-card p-4 rounded-2xl border border-slate-700 text-center">
+                        <i class="fa-solid fa-truck-fast text-2xl text-amber-400 mb-2"></i>
+                        <h4 class="text-white font-bold text-sm">أسرع توصيل</h4>
+                        <p class="text-xs text-slate-400">أسطول نقل حديث ومجهز</p>
+                    </div>
+                    <div class="glass-card p-4 rounded-2xl border border-slate-700 text-center">
+                        <i class="fa-solid fa-scale-balanced text-2xl text-amber-400 mb-2"></i>
+                        <h4 class="text-white font-bold text-sm">موازين دقيقة</h4>
+                        <p class="text-xs text-slate-400">أمانة تامة بالوزن والكيل</p>
+                    </div>
+                    <div class="glass-card p-4 rounded-2xl border border-slate-700 text-center">
+                        <i class="fa-solid fa-handshake text-2xl text-amber-400 mb-2"></i>
+                        <h4 class="text-white font-bold text-sm">دفع عند الاستلام</h4>
+                        <p class="text-xs text-slate-400">معاينة قبل التفريغ</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Selection Cards Section -->
+    <section class="py-12 bg-slate-900/50 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-10">
+                <h2 class="text-2xl sm:text-3xl font-extrabold text-white mb-2">اختر المادة المطلوبة</h2>
+                <p class="text-slate-400 text-sm">اضغط على المادة المطلوبة لتحديدها مباشرة في استمارة الطلب</p>
+            </div>
+
+            <!-- Product Cards Grid -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4" id="productGrid">
+                
+                <!-- Product 1: Sand -->
+                <div onclick="selectProductCard('رمل', 'متر / نقلة / غلاب', this)" class="product-card glass-card glass-card-hover p-6 rounded-2xl cursor-pointer transition-all duration-300 text-center group border-2 border-transparent">
+                    <div class="w-16 h-16 mx-auto mb-4 rounded-2xl bg-amber-500/10 text-amber-400 flex items-center justify-center text-3xl group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-mountain text-amber-400"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-white mb-1">رمل بناء</h3>
+                    <p class="text-xs text-slate-400 mb-3">رمل ناعم، خشن، مكسر، ورمل محارة نقي</p>
+                    <span class="inline-block text-xs font-bold text-amber-400 bg-amber-400/10 px-3 py-1 rounded-full">شائع الاستخدام</span>
+                </div>
+
+                <!-- Product 2: Gravel -->
+                <div onclick="selectProductCard('زلط', 'متر / نقلة / طن', this)" class="product-card glass-card glass-card-hover p-6 rounded-2xl cursor-pointer transition-all duration-300 text-center group border-2 border-transparent">
+                    <div class="w-16 h-16 mx-auto mb-4 rounded-2xl bg-amber-500/10 text-amber-400 flex items-center justify-center text-3xl group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-cubes text-amber-400"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-white mb-1">زلط / سن</h3>
+                    <p class="text-xs text-slate-400 mb-3">زلط عادة، فاين، وسن 1 و سن 2 للخرسانة</p>
+                    <span class="inline-block text-xs font-bold text-amber-400 bg-amber-400/10 px-3 py-1 rounded-full">متوفر جميع المقاسات</span>
+                </div>
+
+                <!-- Product 3: Steel -->
+                <div onclick="selectProductCard('حديد تسليح', 'طن / مقاس مم', this)" class="product-card glass-card glass-card-hover p-6 rounded-2xl cursor-pointer transition-all duration-300 text-center group border-2 border-transparent">
+                    <div class="w-16 h-16 mx-auto mb-4 rounded-2xl bg-amber-500/10 text-amber-400 flex items-center justify-center text-3xl group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-[#fa8c16] fa-layer-group text-amber-400"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-white mb-1">حديد تسليح</h3>
+                    <p class="text-xs text-slate-400 mb-3">حديد عز، العتال، المراكبي، وتدريجات مختلفة</p>
+                    <span class="inline-block text-xs font-bold text-amber-400 bg-amber-400/10 px-3 py-1 rounded-full">أعالي مصانع</span>
+                </div>
+
+                <!-- Product 4: Mix -->
+                <div onclick="selectProductCard('رمل و زلط (مشترك)', 'طن / متر / نقلة', this)" class="product-card glass-card glass-card-hover p-6 rounded-2xl cursor-pointer transition-all duration-300 text-center group border-2 border-transparent">
+                    <div class="w-16 h-16 mx-auto mb-4 rounded-2xl bg-amber-500/10 text-amber-400 flex items-center justify-center text-3xl group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-truck-ramp-box text-amber-400"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-white mb-1">رمل + زلط</h3>
+                    <p class="text-xs text-slate-400 mb-3">طلب مشترك خلطة صبة وخرسانات</p>
+                    <span class="inline-block text-xs font-bold text-amber-400 bg-amber-400/10 px-3 py-1 rounded-full">العرض الأكثر طلباً</span>
+                </div>
+
+                <!-- Product 5: Custom Order -->
+                <div onclick="selectProductCard('طلب خاص / تشكيلة مواد بناء', 'حسب التفاصيل', this)" class="product-card glass-card glass-card-hover p-6 rounded-2xl cursor-pointer transition-all duration-300 text-center group border-2 border-transparent">
+                    <div class="w-16 h-16 mx-auto mb-4 rounded-2xl bg-amber-500/10 text-amber-400 flex items-center justify-center text-3xl group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-list-check text-amber-400"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-white mb-1">تشكيلة طلبات</h3>
+                    <p class="text-xs text-slate-400 mb-3">إمكانية تحديد كميات ورمل وزلط وحديد معاً</p>
+                    <span class="inline-block text-xs font-bold text-amber-400 bg-amber-400/10 px-3 py-1 rounded-full">طلب مخصص</span>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Order & Dynamic Live Preview Section -->
+    <section id="orderSection" class="py-16 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-extrabold text-white">استمارة الطلب المباشر</h2>
+                <p class="text-slate-400 text-sm mt-2">قم بملء البيانات التالية لتكوين رسالة طلبك وإرسالها فوراً للحج عبدالغني</p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+                
+                <!-- Order Form (7 Cols) -->
+                <div class="lg:col-span-7 glass-card p-6 sm:p-8 rounded-3xl border border-slate-700 shadow-2xl relative">
+                    <h3 class="text-xl font-bold text-white mb-6 flex items-center gap-3 border-b border-slate-800 pb-4">
+                        <i class="fa-solid fa-pen-to-square text-amber-400"></i>
+                        تفاصيل طلبك
+                    </h3>
+
+                    <form id="whatsappForm" onsubmit="handleOrderSubmit(event)" class="space-y-5">
+                        
+                        <!-- Material Select Dropdown -->
+                        <div>
+                            <label class="block text-sm font-bold text-slate-300 mb-2">المادة المطلوبة <span class="text-amber-400">*</span></label>
+                            <div class="relative">
+                                <select id="productSelect" onchange="updateLivePreview()" required class="w-full bg-slate-900 border border-slate-700 text-white font-semibold rounded-xl px-4 py-3.5 focus:border-amber-500 focus:ring-2 focus:ring-amber-500/20 outline-none transition appearance-none">
+                                    <option value="رمل">رمل بناء (ناعم / خشن / محارة)</option>
+                                    <option value="زلط">زلط / سن خرادي</option>
+                                    <option value="حديد تسليح">حديد تسليح (مختلف المقاسات)</option>
+                                    <option value="رمل وزلط مشترك">شحنة رمل و زلط معاً</option>
+                                    <option value="طلب مخصص / تشكيلة">طلب مخصص لتجهيز موقع</option>
+                                </select>
+                                <div class="absolute left-4 top-1/2 -translate-y-1/2 pointer-events-none text-slate-400">
+                                    <i class="fa-solid fa-chevron-down"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Quantity Input -->
+                        <div>
+                            <label class="block text-sm font-bold text-slate-300 mb-2">الكمية المطلوبة (مثل: 20 متر / 3 طن / 1 نقلة غلاب) <span class="text-amber-400">*</span></label>
+                            <div class="relative">
+                                <input type="text" id="quantityInput" oninput="updateLivePreview()" required placeholder="اكتب الكمية بالتقريب أو الضبط..." class="w-full bg-slate-900 border border-slate-700 text-white font-medium rounded-xl px-4 py-3.5 pr-11 focus:border-amber-500 focus:ring-2 focus:ring-amber-500/20 outline-none transition">
+                                <div class="absolute right-4 top-1/2 -translate-y-1/2 text-slate-500">
+                                    <i class="fa-solid fa-weight-hanging"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Delivery Location -->
+                        <div>
+                            <label class="block text-sm font-bold text-slate-300 mb-2">مكان وتفاصيل التوصيل <span class="text-amber-400">*</span></label>
+                            <div class="relative">
+                                <input type="text" id="addressInput" oninput="updateLivePreview()" required placeholder="اسم المنطقة، الشارع، أو أقرب علامة مميزة..." class="w-full bg-slate-900 border border-slate-700 text-white font-medium rounded-xl px-4 py-3.5 pr-11 focus:border-amber-500 focus:ring-2 focus:ring-amber-500/20 outline-none transition">
+                                <div class="absolute right-4 top-1/2 -translate-y-1/2 text-slate-500">
+                                    <i class="fa-solid fa-location-dot"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Phone Number -->
+                        <div>
+                            <label class="block text-sm font-bold text-slate-300 mb-2">رقم هاتفك للتواصل والتأكيد <span class="text-amber-400">*</span></label>
+                            <div class="relative">
+                                <input type="tel" id="phoneInput" oninput="updateLivePreview()" required placeholder="01xxxxxxxxx" class="w-full bg-slate-900 border border-slate-700 text-white font-medium rounded-xl px-4 py-3.5 pr-11 text-right focus:border-amber-500 focus:ring-2 focus:ring-amber-500/20 outline-none transition" dir="ltr">
+                                <div class="absolute right-4 top-1/2 -translate-y-1/2 text-slate-500">
+                                    <i class="fa-solid fa-phone"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Additional Notes -->
+                        <div>
+                            <label class="block text-sm font-bold text-slate-300 mb-2">ملاحظات إضافية (اختياري)</label>
+                            <textarea id="notesInput" oninput="updateLivePreview()" rows="2" placeholder="أي تفاصيل أخرى (مثل موعد التفريغ المفضل)..." class="w-full bg-slate-900 border border-slate-700 text-white font-medium rounded-xl px-4 py-3 focus:border-amber-500 focus:ring-2 focus:ring-amber-500/20 outline-none transition resize-none"></textarea>
+                        </div>
+
+                        <!-- Submit Button -->
+                        <button type="submit" class="w-full bg-emerald-600 hover:bg-emerald-500 text-white font-black py-4 px-6 rounded-2xl shadow-xl shadow-emerald-900/30 hover:shadow-emerald-600/30 transition-all duration-300 flex items-center justify-center gap-3 text-lg group transform active:scale-98">
+                            <i class="fa-brands fa-whatsapp text-2xl group-hover:rotate-12 transition-transform"></i>
+                            <span>إرسال الطلب عبر الواتساب الآن</span>
+                        </button>
+                    </form>
+                </div>
+
+                <!-- Live WhatsApp Preview Card (5 Cols) -->
+                <div class="lg:col-span-5 space-y-6">
+                    <div class="glass-card p-6 rounded-3xl border border-amber-500/20 shadow-2xl relative overflow-hidden">
+                        
+                        <!-- Header Preview Title -->
+                        <div class="flex items-center justify-between border-b border-slate-800 pb-4 mb-4">
+                            <div class="flex items-center gap-2">
+                                <div class="w-3 h-3 rounded-full bg-emerald-500 animate-ping"></div>
+                                <h4 class="font-bold text-white text-base">معاينة الرسالة الحية</h4>
+                            </div>
+                            <span class="text-xs text-amber-400 bg-amber-400/10 px-2.5 py-1 rounded-full font-bold">تتحدث فوراً</span>
+                        </div>
+
+                        <!-- Simulated WhatsApp Chat Box -->
+                        <div class="bg-slate-950/80 rounded-2xl p-4 border border-slate-800 relative space-y-3 font-mono text-sm leading-relaxed">
+                            <div class="flex items-center gap-3 border-b border-slate-800/80 pb-3">
+                                <div class="w-10 h-10 rounded-full bg-emerald-600 flex items-center justify-center text-white font-bold">
+                                    <i class="fa-brands fa-whatsapp text-xl"></i>
+                                </div>
+                                <div>
+                                    <h5 class="text-white font-bold text-sm">الحج عبدالغني (المورد)</h5>
+                                    <p class="text-[11px] text-emerald-400">متصل الآن - 01034355314</p>
+                                </div>
+                            </div>
+
+                            <!-- Dynamic Live Message Content Box -->
+                            <div class="bg-emerald-950/40 border border-emerald-800/40 rounded-xl p-4 text-emerald-100 space-y-2 text-xs sm:text-sm">
+                                <p class="font-bold text-amber-300">السلام عليكم ورحمة الله وبركاته، أرغب في طلب مواد بناء:</p>
+                                <p class="border-t border-emerald-900/60 pt-2">📦 <span class="font-semibold text-slate-300">المادة:</span> <span id="prevProduct" class="text-white font-bold">رمل</span></p>
+                                <p>⚖️ <span class="font-semibold text-slate-300">الكمية:</span> <span id="prevQuantity" class="text-white font-bold">لم تُحدد بعد</span></p>
+                                <p>📍 <span class="font-semibold text-slate-300">العنوان:</span> <span id="prevAddress" class="text-white font-bold">لم يُحدد بعد</span></p>
+                                <p>📞 <span class="font-semibold text-slate-300">هاتف التواصل:</span> <span id="prevPhone" class="text-white font-bold">لم يُحدد بعد</span></p>
+                                <p id="prevNotesContainer" class="hidden">📝 <span class="font-semibold text-slate-300">ملاحظات:</span> <span id="prevNotes" class="text-white font-bold"></span></p>
+                            </div>
+
+                            <p class="text-[10px] text-slate-500 text-left pt-1">سيتم فتح الواتساب تلقائياً بالرسالة الجاهزة بمجرد الضغط على الزر</p>
+                        </div>
+
+                        <!-- Direct Call Highlight -->
+                        <div class="mt-6 p-4 rounded-2xl bg-amber-500/10 border border-amber-500/20 text-center">
+                            <p class="text-xs text-amber-300 mb-2 font-bold">هل تفضل الطلب الهاتفي المباشر؟</p>
+                            <a href="tel:01034355314" class="inline-flex items-center gap-2 text-white font-black text-lg hover:text-amber-400 transition-colors">
+                                <i class="fa-solid fa-phone-flip text-amber-400"></i>
+                                <span>01034355314</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Material Estimator / Calculator Section -->
+    <section id="calculator" class="py-16 bg-slate-900/80 border-t border-slate-800">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-10">
+                <span class="text-xs font-bold text-amber-400 bg-amber-400/10 px-3 py-1 rounded-full">أداة مساعدة للبناء</span>
+                <h2 class="text-2xl sm:text-3xl font-extrabold text-white mt-2">حاسبة تقدير مواد الصبة والخرسانة</h2>
+                <p class="text-slate-400 text-sm mt-1">احسب بالتقريب كمية الرمل والزلط المطلوبة حسب مساحة السقف أو الصبة</p>
+            </div>
+
+            <div class="glass-card p-6 sm:p-8 rounded-3xl border border-slate-700 shadow-xl">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
+                    
+                    <!-- Calculator Inputs -->
+                    <div class="space-y-4">
+                        <div>
+                            <label class="block text-xs font-bold text-slate-300 mb-1">مساحة السقف أو الخرسانة (بالمتر المربع)</label>
+                            <input type="number" id="calcArea" oninput="calculateMaterials()" placeholder="مثال: 100" class="w-full bg-slate-950 border border-slate-700 text-white rounded-xl px-4 py-3 focus:border-amber-500 outline-none">
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-bold text-slate-300 mb-1">سمك بلاطة الخرسانة (بالسنتيمتر)</label>
+                            <input type="number" id="calcThickness" oninput="calculateMaterials()" value="15" placeholder="مثال: 15" class="w-full bg-slate-950 border border-slate-700 text-white rounded-xl px-4 py-3 focus:border-amber-500 outline-none">
+                        </div>
+                    </div>
+
+                    <!-- Calculator Results Box -->
+                    <div class="bg-slate-950/80 p-6 rounded-2xl border border-amber-500/30 text-center space-y-3">
+                        <h4 class="text-sm font-bold text-amber-400">التقدير المبدئي للكميات المطلوبة:</h4>
+                        
+                        <div class="grid grid-cols-2 gap-3 pt-2">
+                            <div class="bg-slate-900 p-3 rounded-xl border border-slate-800">
+                                <span class="text-xs text-slate-400 block">رمل محتاج</span>
+                                <span id="resSand" class="text-lg font-black text-amber-400">0 متر³</span>
+                            </div>
+                            <div class="bg-slate-900 p-3 rounded-xl border border-slate-800">
+                                <span class="text-xs text-slate-400 block">زلط / سن محتاج</span>
+                                <span id="resGravel" class="text-lg font-black text-amber-400">0 متر³</span>
+                            </div>
+                        </div>
+
+                        <button onclick="applyCalcToOrder()" class="w-full mt-2 bg-amber-500/20 hover:bg-amber-500/30 text-amber-300 border border-amber-500/40 text-xs font-bold py-2.5 rounded-xl transition">
+                            اعتماد هذه الكميات في نموذج الطلب
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Features Grid -->
+    <section class="py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-2xl sm:text-3xl font-extrabold text-white">لماذا يختار المقاولون والأهالي الحج عبدالغني؟</h2>
+                <p class="text-slate-400 text-sm mt-1">نلتزم بأعلى معايير المصداقية والجودة في سوق تجارة مواد البناء</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="glass-card p-6 rounded-2xl border border-slate-800 space-y-3">
+                    <div class="w-12 h-12 rounded-xl bg-amber-500/10 text-amber-400 flex items-center justify-center text-2xl">
+                        <i class="fa-solid fa-truck-moving"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-white">أسطول نقل سريع ومجهز</h3>
+                    <p class="text-xs text-slate-400 leading-relaxed">نملك سيارات نقل وغلابات بكافة الأحجام لتوصيل الكميات لأصعب أماكن التفريغ بدون تأخير.</p>
+                </div>
+
+                <div class="glass-card p-6 rounded-2xl border border-slate-800 space-y-3">
+                    <div class="w-12 h-12 rounded-xl bg-amber-500/10 text-amber-400 flex items-center justify-center text-2xl">
+                        <i class="fa-solid fa-gem"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-white">خامات نصر وحجرية عالية الجودة</h3>
+                    <p class="text-xs text-slate-400 leading-relaxed">رمل نقي مغسول خالٍ من الطفلة والشوائب، وزلط متدرج متين يعطي أعلى إجهاد للخرسانة.</p>
+                </div>
+
+                <div class="glass-card p-6 rounded-2xl border border-slate-800 space-y-3">
+                    <div class="w-12 h-12 rounded-xl bg-amber-500/10 text-amber-400 flex items-center justify-center text-2xl">
+                        <i class="fa-solid fa-coins"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-white">أسعار تنافسية ودفع آمن</h3>
+                    <p class="text-xs text-slate-400 leading-relaxed">أسعار توريد مباشرة بدون وسطاء مع إمكانية الدفع والتسليم بعد الاستلام والمعاينة الميدانية.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-slate-950 border-t border-slate-800 py-8 text-center text-slate-500 text-xs">
+        <div class="max-w-7xl mx-auto px-4 space-y-3">
+            <p class="font-bold text-slate-400">جميع الحقوق محفوظة © الحج عبدالغني لتجارة وتوريد مواد البناء</p>
+            <p>رقم التواصل المباشر والواتساب: <span class="text-amber-400 font-bold" dir="ltr">01034355314</span></p>
+        </div>
+    </footer>
+
+    <!-- Floating Quick WhatsApp Action Button -->
+    <a href="https://wa.me/201034355314" target="_blank" class="fixed bottom-6 left-6 z-50 bg-emerald-500 hover:bg-emerald-600 text-white w-14 h-14 rounded-full flex items-center justify-center shadow-2xl shadow-emerald-500/50 transition-all duration-300 transform hover:scale-110">
+        <i class="fa-brands fa-whatsapp text-3xl"></i>
+    </a>
+
+    <!-- Interactive JavaScript -->
+    <script>
+        // Synchronize selected product card with the main order form
+        function selectProductCard(productName, defaultQtyHint, cardElement) {
+            // Update dropdown selection
+            const productSelect = document.getElementById('productSelect');
+            productSelect.value = productName;
+
+            // Highlight active card visual border
+            document.querySelectorAll('.product-card').forEach(card => {
+                card.classList.remove('border-amber-500', 'bg-amber-500/10');
+                card.classList.add('border-transparent');
+            });
+
+            if (cardElement) {
+                cardElement.classList.remove('border-transparent');
+                cardElement.classList.add('border-amber-500', 'bg-amber-500/10');
+            }
+
+            // Focus on quantity input
+            const qtyInput = document.getElementById('quantityInput');
+            qtyInput.placeholder = `الكمية بـ (${defaultQtyHint})...`;
+            qtyInput.focus();
+
+            // Refresh live preview text
+            updateLivePreview();
+
+            // Smooth scroll to order section
+            document.getElementById('orderSection').scrollIntoView({ behavior: 'smooth' });
+        }
+
+        // Live Preview Dynamic Updates
+        function updateLivePreview() {
+            const product = document.getElementById('productSelect').value;
+            const quantity = document.getElementById('quantityInput').value.trim();
+            const address = document.getElementById('addressInput').value.trim();
+            const phone = document.getElementById('phoneInput').value.trim();
+            const notes = document.getElementById('notesInput').value.trim();
+
+            document.getElementById('prevProduct').innerText = product || "رمل";
+            document.getElementById('prevQuantity').innerText = quantity || "لم تُحدد بعد";
+            document.getElementById('prevAddress').innerText = address || "لم يُحدد بعد";
+            document.getElementById('prevPhone').innerText = phone || "لم يُحدد بعد";
+
+            const notesContainer = document.getElementById('prevNotesContainer');
+            if (notes) {
+                notesContainer.classList.remove('hidden');
+                document.getElementById('prevNotes').innerText = notes;
+            } else {
+                notesContainer.classList.add('hidden');
+            }
+        }
+
+        // WhatsApp Order Link Generator and Redirection
+        function handleOrderSubmit(e) {
+            e.preventDefault();
+
+            const product = document.getElementById('productSelect').value;
+            const quantity = document.getElementById('quantityInput').value.trim();
+            const address = document.getElementById('addressInput').value.trim();
+            const phone = document.getElementById('phoneInput').value.trim();
+            const notes = document.getElementById('notesInput').value.trim();
+
+            const whatsappNumber = "201034355314";
+
+            // Format message neatly with emojis
+            let message = `السلام عليكم ورحمة الله وبركاته،%0A`;
+            message += `أود طلب مواد بناء من موقعكم الرسمى:%0A%0A`;
+            message += `📦 *المادة المطلوبة:* ${encodeURIComponent(product)}%0A`;
+            message += `⚖️ *الكمية:* ${encodeURIComponent(quantity)}%0A`;
+            message += `📍 *عنوان التوصيل:* ${encodeURIComponent(address)}%0A`;
+            message += `📞 *رقم الهاتف للتواصل:* ${encodeURIComponent(phone)}%0A`;
+
+            if (notes) {
+                message += `📝 *ملاحظات إضافية:* ${encodeURIComponent(notes)}%0A`;
+            }
+
+            message += `%0Aشكراً لك، بانتظار تأكيد الطلب والسعر.`;
+
+            const fullUrl = `https://wa.me/${whatsappNumber}?text=${message}`;
+            window.open(fullUrl, '_blank');
+        }
+
+        // Material Calculator Logic
+        function calculateMaterials() {
+            const area = parseFloat(document.getElementById('calcArea').value) || 0;
+            const thickness = parseFloat(document.getElementById('calcThickness').value) || 0;
+
+            if (area > 0 && thickness > 0) {
+                const totalVolumeCubicMeters = area * (thickness / 100);
+                
+                // General engineering standard ratios for cubic meter concrete:
+                // ~0.4 m3 Sand per m3 Concrete, ~0.8 m3 Gravel per m3 Concrete
+                const sandNeeded = (totalVolumeCubicMeters * 0.44).toFixed(1);
+                const gravelNeeded = (totalVolumeCubicMeters * 0.88).toFixed(1);
+
+                document.getElementById('resSand').innerText = `${sandNeeded} متر³`;
+                document.getElementById('resGravel').innerText = `${gravelNeeded} متر³`;
+            } else {
+                document.getElementById('resSand').innerText = `0 متر³`;
+                document.getElementById('resGravel').innerText = `0 متر³`;
+            }
+        }
+
+        // Apply calculated values straight to order form
+        function applyCalcToOrder() {
+            const sandVal = document.getElementById('resSand').innerText;
+            const gravelVal = document.getElementById('resGravel').innerText;
+
+            if (sandVal === '0 متر³') {
+                alert('برجاء إدخال المساحة والسمك أولاً للحساب');
+                return;
+            }
+
+            document.getElementById('productSelect').value = 'رمل وزلط مشترك';
+            document.getElementById('quantityInput').value = `رمل: ${sandVal} + زلط: ${gravelVal}`;
+            updateLivePreview();
+
+            document.getElementById('orderSection').scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
+</body>
+</html>
